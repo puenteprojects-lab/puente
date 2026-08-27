@@ -14,7 +14,7 @@ return [
     ],
 
     'hero' => [
-        'badge' => 'Private psychotherapy practice in Spain',
+        'badge' => 'Online psychotherapy practice',
         'title' => 'Steady ground when everything around you changes',
         'lead' => 'Puente means “bridge” in Spanish. I help people keep hold of themselves, their relationships and their footing while country, language and daily life are all shifting.',
         'cta_primary' => 'Book an intro call',
@@ -37,7 +37,7 @@ return [
             ],
             [
                 'title' => 'Relationships',
-                'text' => 'Conflict with a partner, growing distance, difficulty talking with children or parents.',
+                'text' => 'Conflict with a partner, growing distance, difficult conversations with children or parents — and when your sense of being all right rests entirely on one person.',
             ],
             [
                 'title' => 'Self-worth and boundaries',
@@ -68,10 +68,6 @@ return [
                 'text' => 'Nights that will not close, and mornings that begin already tired.',
             ],
             [
-                'title' => 'Emotional dependency',
-                'text' => 'When your sense of being all right rests entirely on how one other person is treating you.',
-            ],
-            [
                 'title' => 'After a traumatic experience',
                 'text' => 'Something that ended long ago but still decides how you sleep, react and trust.',
             ],
@@ -93,7 +89,7 @@ return [
             [
                 'n' => '02',
                 'title' => 'Regular sessions',
-                'text' => 'Fifty minutes, usually once a week, online or in person. We move at your pace and check in on where you are heading.',
+                'text' => 'Fifty minutes, usually once a week, over video. We move at your pace and check in on where you are heading.',
             ],
             [
                 'n' => '03',
@@ -105,7 +101,7 @@ return [
 
     'about' => [
         'title' => 'About me',
-        'p1' => 'I am a practising psychologist running a private practice in Spain. I work with adults, online and in person.',
+        'p1' => 'I am a psychotherapist working online, which means geography does not matter. I currently live in Spain, but my practice reaches clients in Poland, Spain and other countries.',
         'p2' => 'This is where the details of my training, therapeutic approach and years of practice will go.',
         'p3' => 'I believe a move abroad is not only the loss of what was familiar — it is also a chance to meet yourself again. The work of therapy is to make that crossing less lonely.',
     ],
@@ -123,7 +119,7 @@ return [
                 'title' => 'Individual session',
                 'duration' => '50 minutes',
                 'price' => '— €',
-                'note' => 'Online, or in person in Spain',
+                'note' => 'Online, over video',
             ],
             [
                 'title' => 'Block of five',
@@ -143,8 +139,8 @@ return [
                 'a' => 'Russian, Ukrainian, Polish, Spanish and English. Tell me which you would prefer when we first speak.',
             ],
             [
-                'q' => 'Online or in person?',
-                'a' => 'Both. Online sessions run over video and are no less effective than meeting in the room. In-person sessions take place in Spain.',
+                'q' => 'How do the sessions happen?',
+                'a' => 'Over video, wherever you are. Working online is no less effective than meeting in a room, and the country you live in does not decide whether we can work together.',
             ],
             [
                 'q' => 'How many sessions will I need?',
@@ -169,7 +165,7 @@ return [
     ],
 
     'footer' => [
-        'tagline' => 'Psychology practice in Spain',
+        'tagline' => 'Psychotherapy online',
     ],
 
 ];

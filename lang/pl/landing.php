@@ -14,7 +14,7 @@ return [
     ],
 
     'hero' => [
-        'badge' => 'Prywatna praktyka psychologiczna w Hiszpanii',
+        'badge' => 'Prywatna praktyka psychoterapeutyczna online',
         'title' => 'Oparcie, kiedy wszystko wokół się zmienia',
         'lead' => 'Puente znaczy po hiszpańsku „most”. Pomagam zachować siebie, relacje i wewnętrzną równowagę wtedy, gdy zmienia się kraj, język i codzienne życie.',
         'cta_primary' => 'Umów rozmowę wstępną',
@@ -37,7 +37,7 @@ return [
             ],
             [
                 'title' => 'Relacje',
-                'text' => 'Konflikty w związku, narastający dystans, trudna rozmowa z dziećmi lub rodzicami.',
+                'text' => 'Konflikty w związku, narastający dystans, trudne rozmowy z dziećmi lub rodzicami — i kiedy twój stan zależy wyłącznie od jednej osoby.',
             ],
             [
                 'title' => 'Poczucie własnej wartości i granice',
@@ -68,10 +68,6 @@ return [
                 'text' => 'Noce, które się nie kończą, i poranki zaczynające się już ze zmęczeniem.',
             ],
             [
-                'title' => 'Zależność emocjonalna',
-                'text' => 'Kiedy poczucie, że wszystko jest w porządku, opiera się wyłącznie na tym, jak traktuje cię jedna osoba.',
-            ],
-            [
                 'title' => 'Skutki doświadczenia traumatycznego',
                 'text' => 'Coś, co dawno się skończyło, a wciąż decyduje o tym, jak śpisz, reagujesz i ufasz.',
             ],
@@ -93,7 +89,7 @@ return [
             [
                 'n' => '02',
                 'title' => 'Regularne spotkania',
-                'text' => 'Pięćdziesiąt minut, zwykle raz w tygodniu, online lub na miejscu. Idziemy w twoim tempie i sprawdzamy, dokąd zmierzamy.',
+                'text' => 'Pięćdziesiąt minut, zwykle raz w tygodniu, przez wideo. Idziemy w twoim tempie i sprawdzamy, dokąd zmierzamy.',
             ],
             [
                 'n' => '03',
@@ -105,7 +101,7 @@ return [
 
     'about' => [
         'title' => 'O mnie',
-        'p1' => 'Jestem praktykującą psycholożką i prowadzę prywatną praktykę w Hiszpanii. Pracuję z osobami dorosłymi — online i stacjonarnie.',
+        'p1' => 'Jestem psychoterapeutką i pracuję online, co oznacza, że geografia nie ma znaczenia. Obecnie mieszkam w Hiszpanii, ale w mojej praktyce są osoby z Polski, Hiszpanii i innych krajów.',
         'p2' => 'Tutaj znajdzie się blok o wykształceniu, podejściu i doświadczeniu: jaka metoda, ile lat praktyki, gdzie studiowałam.',
         'p3' => 'Bliska jest mi myśl, że wyjazd to nie tylko utrata tego, co znane, ale też okazja, by spotkać się ze sobą na nowo. Zadaniem terapii jest sprawić, by to przejście było mniej samotne.',
     ],
@@ -123,7 +119,7 @@ return [
                 'title' => 'Sesja indywidualna',
                 'duration' => '50 minut',
                 'price' => '— €',
-                'note' => 'Online lub stacjonarnie w Hiszpanii',
+                'note' => 'Online, przez wideo',
             ],
             [
                 'title' => 'Pakiet pięciu spotkań',
@@ -143,8 +139,8 @@ return [
                 'a' => 'Po polsku, rosyjsku, ukraińsku, hiszpańsku i angielsku. Powiedz przy pierwszym kontakcie, który język jest dla ciebie wygodniejszy.',
             ],
             [
-                'q' => 'Online czy stacjonarnie?',
-                'a' => 'Jedno i drugie. Spotkania online odbywają się przez wideo i nie są mniej skuteczne niż stacjonarne. Stacjonarne — w Hiszpanii.',
+                'q' => 'Jak wyglądają spotkania?',
+                'a' => 'Przez wideo, gdziekolwiek jesteś. Praca online nie jest mniej skuteczna niż spotkanie w gabinecie, a kraj zamieszkania nie decyduje o tym, czy możemy razem pracować.',
             ],
             [
                 'q' => 'Ile spotkań będzie potrzebnych?',
@@ -169,7 +165,7 @@ return [
     ],
 
     'footer' => [
-        'tagline' => 'Psychologia w Hiszpanii',
+        'tagline' => 'Psychoterapia online',
     ],
 
 ];

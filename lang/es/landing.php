@@ -14,7 +14,7 @@ return [
     ],
 
     'hero' => [
-        'badge' => 'Consulta privada de psicología en España',
+        'badge' => 'Consulta privada de psicoterapia en línea',
         'title' => 'Un punto de apoyo cuando todo alrededor cambia',
         'lead' => 'Puente es exactamente eso: un puente. Acompaño a quienes quieren sostenerse a sí mismos, sus vínculos y su equilibrio mientras cambian el país, el idioma y la vida cotidiana.',
         'cta_primary' => 'Reservar una primera llamada',
@@ -37,7 +37,7 @@ return [
             ],
             [
                 'title' => 'Relaciones',
-                'text' => 'Conflictos en la pareja, distancia creciente, dificultad para hablar con hijos o padres.',
+                'text' => 'Conflictos en la pareja, distancia creciente, conversaciones difíciles con hijos o padres, y cuando tu estado depende por completo de una sola persona.',
             ],
             [
                 'title' => 'Autoestima y límites',
@@ -68,10 +68,6 @@ return [
                 'text' => 'Noches que no se cierran y mañanas que empiezan ya cansadas.',
             ],
             [
-                'title' => 'Dependencia emocional',
-                'text' => 'Cuando sentirse bien depende por completo de cómo te trata una sola persona.',
-            ],
-            [
                 'title' => 'Las secuelas de una experiencia traumática',
                 'text' => 'Algo que terminó hace tiempo pero todavía decide cómo duermes, reaccionas y confías.',
             ],
@@ -93,7 +89,7 @@ return [
             [
                 'n' => '02',
                 'title' => 'Sesiones regulares',
-                'text' => 'Cincuenta minutos, normalmente una vez por semana, en línea o presencial. Avanzamos a tu ritmo y revisamos hacia dónde vamos.',
+                'text' => 'Cincuenta minutos, normalmente una vez por semana, por videollamada. Avanzamos a tu ritmo y revisamos hacia dónde vamos.',
             ],
             [
                 'n' => '03',
@@ -105,7 +101,7 @@ return [
 
     'about' => [
         'title' => 'Sobre mí',
-        'p1' => 'Soy psicóloga en ejercicio y tengo consulta privada en España. Trabajo con personas adultas, en línea y de forma presencial.',
+        'p1' => 'Soy psicoterapeuta y trabajo en línea, lo que significa que la geografía no importa. Ahora vivo en España, pero mi consulta atiende a personas de Polonia, España y otros países.',
         'p2' => 'Aquí irán los datos de formación, enfoque terapéutico y años de práctica.',
         'p3' => 'Creo que emigrar no es solo perder lo conocido: también es una ocasión para reencontrarse con uno mismo. El trabajo terapéutico sirve para que ese tránsito sea menos solitario.',
     ],
@@ -123,7 +119,7 @@ return [
                 'title' => 'Sesión individual',
                 'duration' => '50 minutos',
                 'price' => '— €',
-                'note' => 'En línea o presencial en España',
+                'note' => 'En línea, por videollamada',
             ],
             [
                 'title' => 'Bono de cinco sesiones',
@@ -143,8 +139,8 @@ return [
                 'a' => 'En ruso, ucraniano, polaco, español e inglés. Dime cuál prefieres en el primer contacto.',
             ],
             [
-                'q' => '¿En línea o presencial?',
-                'a' => 'Ambas cosas. Las sesiones en línea se hacen por videollamada y no son menos eficaces que las presenciales. Las presenciales, en España.',
+                'q' => '¿Cómo son las sesiones?',
+                'a' => 'Por videollamada, estés donde estés. Trabajar en línea no es menos eficaz que verse en consulta, y el país en el que vives no decide si podemos trabajar juntos.',
             ],
             [
                 'q' => '¿Cuántas sesiones necesitaré?',
@@ -169,7 +165,7 @@ return [
     ],
 
     'footer' => [
-        'tagline' => 'Psicología en España',
+        'tagline' => 'Psicoterapia en línea',
     ],
 
 ];

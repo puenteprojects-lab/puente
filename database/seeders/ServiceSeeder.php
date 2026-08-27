@@ -27,7 +27,6 @@ class ServiceSeeder extends Seeder
         'eating-behaviour',
         'compulsions-and-dependency',
         'sleep-and-insomnia',
-        'emotional-dependency',
         'after-a-traumatic-experience',
         'growth-work-and-money',
     ];
