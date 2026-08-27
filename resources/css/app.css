@@ -13,6 +13,8 @@
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
 
+    --font-display: Lora, Georgia, 'Times New Roman', serif;
+
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
     --radius-sm: calc(var(--radius) - 4px);
@@ -44,6 +46,14 @@
     --color-border: var(--border);
     --color-input: var(--input);
     --color-ring: var(--ring);
+
+    /* Бренд Puente */
+    --color-brand-teal: var(--brand-teal);
+    --color-brand-teal-dark: var(--brand-teal-dark);
+    --color-brand-teal-light: var(--brand-teal-light);
+    --color-brand-terracotta: var(--brand-terracotta);
+    --color-brand-terracotta-deep: var(--brand-terracotta-deep);
+    --color-brand-sand: var(--brand-sand);
 
     --color-chart-1: var(--chart-1);
     --color-chart-2: var(--chart-2);
@@ -101,6 +111,14 @@
     --secondary: hsl(0 0% 92.1%);
     --secondary-foreground: hsl(0 0% 9%);
     --muted: hsl(0 0% 96.1%);
+
+    /* Бренд Puente — одинаковы в обеих темах, это фирменные цвета */
+    --brand-teal: #2b5f5a;
+    --brand-teal-dark: #1f4744;
+    --brand-teal-light: #3e7c76;
+    --brand-terracotta: #e8a87c;
+    --brand-terracotta-deep: #a65e29;
+    --brand-sand: #f7f3ee;
     --muted-foreground: hsl(0 0% 45.1%);
     --accent: hsl(0 0% 96.1%);
     --accent-foreground: hsl(0 0% 9%);

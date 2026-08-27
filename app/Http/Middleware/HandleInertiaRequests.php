@@ -35,6 +35,9 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
+        $base = config('locales.base');
+        $locale = app()->getLocale();
+
         return [
             ...parent::share($request),
             'name' => config('app.name'),
@@ -42,6 +45,22 @@ class HandleInertiaRequests extends Middleware
                 'user' => $request->user(),
             ],
             'sidebarOpen' => ! $request->hasCookie('sidebar_state') || $request->cookie('sidebar_state') === 'true',
+            'i18n' => [
+                'locale' => $locale,
+                'base' => $base,
+                // The switcher needs the URL for each language, and the base
+                // locale lives at the root rather than behind a prefix.
+                'locales' => collect(config('locales.supported'))
+                    ->map(fn (array $meta, string $code) => [
+                        'code' => $code,
+                        'native' => $meta['native'],
+                        'url' => $code === $base ? '/' : "/{$code}",
+                        'current' => $code === $locale,
+                    ])
+                    ->values()
+                    ->all(),
+                'messages' => trans('landing'),
+            ],
         ];
     }
 }
