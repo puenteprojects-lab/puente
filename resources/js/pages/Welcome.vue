@@ -1,10 +1,19 @@
 <script setup lang="ts">
 import { Head, Link } from '@inertiajs/vue3';
-import { dashboard, login } from '@/routes';
+import { computed } from 'vue';
 import PuenteMark from '@/components/PuenteMark.vue';
 import { useTranslations } from '@/composables/useTranslations';
+import { dashboard, login } from '@/routes';
 
-const { t, list, locale, locales } = useTranslations();
+const props = defineProps<{ services?: Service[] }>();
+
+const { t, list, locales } = useTranslations();
+
+// Услуги приходят из базы; пока там пусто — показываем встроенные тексты,
+// чтобы секция никогда не оказалась пустой.
+const services = computed(() =>
+    props.services?.length ? props.services : list<Service>('services.items'),
+);
 
 const nav = [
     { key: 'nav.services', href: '#services' },
@@ -194,7 +203,7 @@ interface Question {
 
                 <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     <article
-                        v-for="service in list<Service>('services.items')"
+                        v-for="service in services"
                         :key="service.title"
                         class="rounded-2xl border border-brand-teal/10 bg-brand-sand p-7 transition-colors hover:border-brand-teal/25"
                     >
