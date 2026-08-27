@@ -29,7 +29,7 @@ return [
         'items' => [
             [
                 'title' => 'Anxiety and stress',
-                'text' => 'Constant tension, broken sleep, the feeling of never being able to stand down.',
+                'text' => 'Constant tension, panic attacks, phobias, the feeling of never being able to stand down.',
             ],
             [
                 'title' => 'Adjusting after a move',
@@ -50,6 +50,34 @@ return [
             [
                 'title' => 'Burnout',
                 'text' => 'Work has stopped meaning anything, and there is no energy left even for rest.',
+            ],
+            [
+                'title' => 'Emotions and how to hold them',
+                'text' => 'Anger, guilt or shame that arrive faster than you can think and stay longer than you can bear.',
+            ],
+            [
+                'title' => 'Eating and emotion',
+                'text' => 'Food that stops being about hunger and becomes the way you get through a difficult evening.',
+            ],
+            [
+                'title' => 'Compulsions and dependency',
+                'text' => 'Something you keep returning to, although the decision to stop has been made many times.',
+            ],
+            [
+                'title' => 'Sleep and insomnia',
+                'text' => 'Nights that will not close, and mornings that begin already tired.',
+            ],
+            [
+                'title' => 'Emotional dependency',
+                'text' => 'When your sense of being all right rests entirely on how one other person is treating you.',
+            ],
+            [
+                'title' => 'After a traumatic experience',
+                'text' => 'Something that ended long ago but still decides how you sleep, react and trust.',
+            ],
+            [
+                'title' => 'Growth, work and money',
+                'text' => 'Not a crisis, but a question: what next, and on what terms — in your career, your plans, your relationship with money.',
             ],
         ],
     ],

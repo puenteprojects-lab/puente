@@ -29,7 +29,7 @@ return [
         'items' => [
             [
                 'title' => 'Ansiedad y estrés',
-                'text' => 'Tensión constante, sueño interrumpido, la sensación de no poder bajar la guardia nunca.',
+                'text' => 'Tensión constante, ataques de pánico, fobias, la sensación de no poder bajar la guardia nunca.',
             ],
             [
                 'title' => 'Adaptación tras la mudanza',
@@ -50,6 +50,34 @@ return [
             [
                 'title' => 'Desgaste profesional',
                 'text' => 'El trabajo ha dejado de tener sentido y no queda energía ni para descansar.',
+            ],
+            [
+                'title' => 'Las emociones y cómo sostenerlas',
+                'text' => 'La rabia, la culpa o la vergüenza llegan antes de que puedas pensar y duran más de lo que puedes soportar.',
+            ],
+            [
+                'title' => 'La comida y las emociones',
+                'text' => 'Comer deja de tener que ver con el hambre y se convierte en la forma de atravesar una noche difícil.',
+            ],
+            [
+                'title' => 'Dependencias y conductas compulsivas',
+                'text' => 'Algo a lo que vuelves una y otra vez, aunque la decisión de parar se haya tomado muchas veces.',
+            ],
+            [
+                'title' => 'Sueño e insomnio',
+                'text' => 'Noches que no se cierran y mañanas que empiezan ya cansadas.',
+            ],
+            [
+                'title' => 'Dependencia emocional',
+                'text' => 'Cuando sentirse bien depende por completo de cómo te trata una sola persona.',
+            ],
+            [
+                'title' => 'Las secuelas de una experiencia traumática',
+                'text' => 'Algo que terminó hace tiempo pero todavía decide cómo duermes, reaccionas y confías.',
+            ],
+            [
+                'title' => 'Crecimiento, trabajo y dinero',
+                'text' => 'No es una crisis, sino una pregunta: qué sigue y en qué términos, en la carrera, los planes y la relación con el dinero.',
             ],
         ],
     ],

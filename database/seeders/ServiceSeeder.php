@@ -23,6 +23,13 @@ class ServiceSeeder extends Seeder
         'self-worth-and-boundaries',
         'loss-and-transition',
         'burnout',
+        'emotions-and-regulation',
+        'eating-behaviour',
+        'compulsions-and-dependency',
+        'sleep-and-insomnia',
+        'emotional-dependency',
+        'after-a-traumatic-experience',
+        'growth-work-and-money',
     ];
 
     public function run(): void

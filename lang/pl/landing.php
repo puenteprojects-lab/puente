@@ -29,7 +29,7 @@ return [
         'items' => [
             [
                 'title' => 'Lęk i stres',
-                'text' => 'Stałe napięcie, przerywany sen, poczucie, że nigdy nie można opuścić gardy.',
+                'text' => 'Stałe napięcie, ataki paniki, fobie, poczucie, że nigdy nie można opuścić gardy.',
             ],
             [
                 'title' => 'Adaptacja po przeprowadzce',
@@ -50,6 +50,34 @@ return [
             [
                 'title' => 'Wypalenie',
                 'text' => 'Praca przestała mieć sens, a sił nie starcza nawet na odpoczynek.',
+            ],
+            [
+                'title' => 'Emocje i jak je udźwignąć',
+                'text' => 'Złość, poczucie winy albo wstyd przychodzą szybciej, niż zdążysz pomyśleć, i trwają dłużej, niż da się wytrzymać.',
+            ],
+            [
+                'title' => 'Jedzenie i emocje',
+                'text' => 'Jedzenie przestaje dotyczyć głodu i staje się sposobem na przetrwanie trudnego wieczoru.',
+            ],
+            [
+                'title' => 'Uzależnienia i zachowania kompulsywne',
+                'text' => 'Coś, do czego wracasz raz za razem, choć decyzja o przerwaniu zapadała wielokrotnie.',
+            ],
+            [
+                'title' => 'Sen i bezsenność',
+                'text' => 'Noce, które się nie kończą, i poranki zaczynające się już ze zmęczeniem.',
+            ],
+            [
+                'title' => 'Zależność emocjonalna',
+                'text' => 'Kiedy poczucie, że wszystko jest w porządku, opiera się wyłącznie na tym, jak traktuje cię jedna osoba.',
+            ],
+            [
+                'title' => 'Skutki doświadczenia traumatycznego',
+                'text' => 'Coś, co dawno się skończyło, a wciąż decyduje o tym, jak śpisz, reagujesz i ufasz.',
+            ],
+            [
+                'title' => 'Rozwój, praca i pieniądze',
+                'text' => 'Nie kryzys, lecz pytanie: co dalej i na jakich warunkach — w karierze, planach, relacji z pieniędzmi.',
             ],
         ],
     ],
