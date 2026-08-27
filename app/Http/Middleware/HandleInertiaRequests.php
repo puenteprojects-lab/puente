@@ -51,13 +51,15 @@ class HandleInertiaRequests extends Middleware
             'i18n' => [
                 'locale' => $locale,
                 'base' => $base,
-                // The switcher needs the URL for each language, and the base
-                // locale lives at the root rather than behind a prefix.
+                // The switcher needs a relative URL, while hreflang and
+                // canonical tags have to be absolute. The base locale lives at
+                // the root rather than behind a prefix.
                 'locales' => collect(config('locales.supported'))
                     ->map(fn (array $meta, string $code) => [
                         'code' => $code,
                         'native' => $meta['native'],
                         'url' => $code === $base ? '/' : "/{$code}",
+                        'absolute' => $code === $base ? url('/') : url("/{$code}"),
                         'current' => $code === $locale,
                     ])
                     ->values()

@@ -5,6 +5,7 @@ export interface LocaleLink {
     code: string;
     native: string;
     url: string;
+    absolute: string;
     current: boolean;
 }
 

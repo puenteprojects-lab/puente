@@ -34,6 +34,22 @@
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+        {{--
+            These belong in the server-rendered head rather than in Inertia's
+            <Head>: crawlers read hreflang and canonical from the HTML they are
+            served, and Inertia only injects its head tags once JavaScript runs.
+            Only the landing page has language twins, so the block is scoped to
+            its routes.
+        --}}
+        @if (request()->routeIs('home', 'home.locale'))
+            @php($baseLocale = config('locales.base'))
+            <link rel="canonical" href="{{ url()->current() }}">
+            @foreach (array_keys(config('locales.supported')) as $code)
+                <link rel="alternate" hreflang="{{ $code }}" href="{{ $code === $baseLocale ? url('/') : url('/'.$code) }}">
+            @endforeach
+            <link rel="alternate" hreflang="x-default" href="{{ url('/') }}">
+        @endif
+
         @fonts
 
         @vite(['resources/css/app.css', 'resources/js/app.ts', "resources/js/pages/{$page['component']}.vue"])
