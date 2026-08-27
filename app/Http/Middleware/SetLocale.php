@@ -12,26 +12,39 @@ class SetLocale
     /**
      * Resolve the active locale for the request.
      *
-     * The URL prefix wins, because a shared link must always open in the
-     * language it was shared in. Otherwise we fall back to what the visitor
-     * chose earlier, then to the browser's preference.
+     * The landing routes state their own language and must be taken at their
+     * word: a prefixed URL through its route parameter, and the root as the
+     * base locale. That is what the canonical and hreflang tags promise, and
+     * it is the only way the switcher can lead back to the base language once
+     * a visitor has picked another one.
+     *
+     * Everywhere else — the dashboard, settings, the admin — there is no
+     * language in the URL, so we fall back to the visitor's last choice and
+     * then to what their browser asks for.
      */
     public function handle(Request $request, Closure $next): Response
     {
         $supported = array_keys(config('locales.supported'));
+        $base = config('locales.base');
 
-        $locale = $request->route('locale');
+        $route = $request->route();
 
-        if (! in_array($locale, $supported, true)) {
-            $locale = $request->session()->get('locale');
-        }
+        if ($route?->named('home')) {
+            $locale = $base;
+        } else {
+            $locale = $route?->parameter('locale');
 
-        if (! in_array($locale, $supported, true)) {
-            $locale = $request->getPreferredLanguage($supported);
-        }
+            if (! in_array($locale, $supported, true)) {
+                $locale = $request->session()->get('locale');
+            }
 
-        if (! in_array($locale, $supported, true)) {
-            $locale = config('locales.base');
+            if (! in_array($locale, $supported, true)) {
+                $locale = $request->getPreferredLanguage($supported);
+            }
+
+            if (! in_array($locale, $supported, true)) {
+                $locale = $base;
+            }
         }
 
         App::setLocale($locale);

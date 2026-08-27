@@ -21,6 +21,21 @@ it('does not treat an unknown prefix as a locale', function () {
     $this->get('/de')->assertNotFound();
 });
 
+it('keeps the root on the base locale after another language was visited', function () {
+    // The canonical and hreflang tags promise that / is English, and the
+    // switcher has to be able to lead back to it.
+    $this->get('/ru')->assertInertia(fn (AssertableInertia $page) => $page->where('i18n.locale', 'ru'));
+
+    $this->get('/')->assertInertia(fn (AssertableInertia $page) => $page->where('i18n.locale', 'en'));
+});
+
+it('remembers the chosen language on pages that have no prefix', function () {
+    $this->get('/uk');
+
+    $this->get('/login')
+        ->assertInertia(fn (AssertableInertia $page) => $page->where('i18n.locale', 'uk'));
+});
+
 it('passes published services to the page in the active language', function () {
     Service::factory()->create([
         'slug' => 'relationships',
